@@ -1,0 +1,18 @@
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program54
+    {
+    internal class Program
+    {
+        static void Main()
+        {
+            string s = null;
+            int length = s?.Length ?? 0; // если s?.Length вернул null → берём 0
+            Console.WriteLine($"Длина строки: {length}"); // Вывод: Длина строки: 0
+        }
+    }
+    }
